@@ -1,31 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros - Concesionario de Coches</title>
     <link rel="stylesheet" href="estilos.css">
+    <style>
+       
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+/* Efecto hover en las imágenes */
+.hover-effect:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* Estilos de la sección de visión */
+.vision {
+    background-color: #f9f9f9;
+}
+
+
+
+    </style>
+
+    
 </head>
+
 <body>
     <header>
         <nav>
-            <select onchange="window.location.href=this.value;">
-                <option value="index.html">Navegacion</option>
-                <option value="index.html">Inicio</option>
-                <option value="coches.html">Coches</option>
-                <option value="sobre_nosotros.html">Sobre Nosotros</option>
-                <option value="contacto.html">Contacto</option>
-            </select>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="coches.html">Coches</a></li>
+                <li><a href="sobre_nosotros.html" style="color: rgb(255, 0, 0);">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
-    
-    
 
     <main>
-        <h1>Sobre Nosotros</h1>
-        <!-- Información sobre el concesionario aquí -->
+        <section class="historia">
+            <h2>Nuestra Historia</h2>
+            <!-- Slider de imágenes -->
+            <div >
+               
+                <img src="historia2.jpg" alt="Historia 2">
+                
+            </div>
+            <p>Con más de 20 años en la industria automotriz, en AutoSelect nos enorgullece ser un referente en el
+                sector de alquiler y venta de coches. Desde nuestros humildes comienzos en 2000, nos hemos comprometido
+                a proporcionar a nuestros clientes una experiencia excepcional en cada paso del camino.</p>
+            <p>A lo largo de las décadas, hemos cultivado relaciones sólidas con fabricantes de automóviles líderes en
+                el mundo, lo que nos permite ofrecer una amplia gama de vehículos de alta calidad para satisfacer las
+                necesidades de nuestros clientes más exigentes.</p>
+        </section>
+
+        <section class="compromiso">
+            <h2>Nuestro Compromiso</h2>
+            
+            <p >En AutoSelect, nuestro compromiso con la excelencia y la satisfacción del cliente es inquebrantable. Nos
+                esforzamos por superar las expectativas en todo momento, desde el momento en que un cliente entra por
+                nuestras puertas hasta mucho después de que haya conducido su nuevo coche fuera del lote.</p>
+            <!-- Hover effect en la imagen -->
+            <img src="compromiso.jpg" alt="Compromiso del Concesionario" class="hover-effect">
+        </section>
+
+        <section class="vision">
+            <h2>Nuestra Visión</h2>
+            
+            <div >
+                <img src="vision.jpg" alt="Visión del Concesionario">
+            </div>
+            <p>En AutoSelect, tenemos una visión clara del futuro. Nos esforzamos por seguir siendo líderes en la
+                industria automotriz, adoptando tecnologías innovadoras y prácticas comerciales sostenibles para
+                proporcionar soluciones de movilidad avanzadas a nuestros clientes.</p>
+            <p>Estamos comprometidos con la mejora continua y la evolución, siempre buscando nuevas formas de servir
+                mejor a nuestra comunidad y al medio ambiente. Creemos que la movilidad del futuro es sostenible, segura
+                y accesible para todos, y trabajamos incansablemente para hacer realidad esa visión.</p>
+        </section>
     </main>
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
